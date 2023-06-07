@@ -2,6 +2,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Left_Reset {
+            bindings = <&sys_reset>;
+            key-positions = <0 4 20 24>;
+        };
+
+        Right_Reset {
+            bindings = <&sys_reset>;
+            key-positions = <5 9 29 25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
