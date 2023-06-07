@@ -6,12 +6,12 @@
         compatible = "zmk,combos";
 
         Left_Reset {
-            bindings = <&sys_reset>;
+            bindings = <&bootloader>;
             key-positions = <0 4 20 24>;
         };
 
         Right_Reset {
-            bindings = <&sys_reset>;
+            bindings = <&bootloader>;
             key-positions = <5 9 29 25>;
         };
     };
