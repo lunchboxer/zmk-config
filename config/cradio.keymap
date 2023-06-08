@@ -5,6 +5,7 @@
 
 #define QWERTY 0
 #define BLUETOOTH 1
+#define NUM 2
 
 &mt {
   flavor = "tap-preferred";
@@ -53,7 +54,7 @@
      &kp Q       &kp W         &kp E        &kp R      &kp T      &kp Y        &kp U         &kp I       &kp O  &kp P
      &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F      &kp G      &kp H  &mt RSHIFT J  &mt LCTRL K  &mt LGUI L     &mt LALT SEMI
      &kp Z       &kp X         &kp C        &kp V      &kp B      &kp N        &kp M     &kp COMMA     &kp DOT       &kp FSLH
-                                          &kp TAB  &kp SPACE    &kp RET     &kp BSPC
+                                          &lt NUM TAB  &kp SPACE    &kp RET     &kp BSPC
             >;
         };
         bluetooth_layer {
@@ -62,6 +63,14 @@
                 &trans &trans &trans &trans &bt BT_PRV             &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &bt BT_NXT             &trans &trans &trans &trans &trans
                                          &trans &bt BT_CLR       &trans &trans
+                >;
+       };
+        num_layer {
+            bindings = <
+                &trans &trans &trans &trans &trans             &trans &kp N7 &kp N8 &kp N9 &trans
+                &trans &trans &trans &trans &trans             &trans &kp N4 &kp N5 &kp N6 &trans
+                &trans &trans &trans &trans &trans             &trans &kp N1 &kp N2 &kp N3 &trans
+                                         &trans &trans       &trans &kp N0
                 >;
        };
         blank_layer {
