@@ -6,6 +6,11 @@
 #define QWERTY 0
 #define BLUETOOTH 1
 
+&mt {
+  flavor = "tap-preferred";
+  tapping_term_ms = <200>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
