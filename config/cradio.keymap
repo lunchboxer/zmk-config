@@ -47,6 +47,11 @@
             bindings = <&sl 1>;
             key-positions = <4 14 24>;
         };
+
+        Media {
+            bindings = <&sl 4>;
+            key-positions = <28 26>;
+        };
     };
 
     keymap {
@@ -54,10 +59,10 @@
 
         default_layer {
             bindings = <
-     &kp Q       &kp W        &kp E         &kp R        &kp T      &kp Y         &kp U        &kp I       &kp O          &kp P
-&mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F        &kp G      &kp H  &mt RSHIFT J  &mt LCTRL K  &mt LGUI L  &mt LALT SEMI
-     &kp Z       &kp X        &kp C         &kp V        &kp B      &kp N         &kp M    &kp COMMA     &kp DOT       &kp FSLH
-                                        &lt 2 TAB  &lt 3 SPACE    &kp RET      &kp BSPC
+     &kp Q       &kp W        &kp E         &kp R        &kp T          &kp Y         &kp U        &kp I       &kp O          &kp P
+&mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F        &kp G          &kp H  &mt RSHIFT J  &mt LCTRL K  &mt LGUI L  &mt LALT SEMI
+     &kp Z       &kp X        &kp C         &kp V        &kp B          &kp N         &kp M    &kp COMMA     &kp DOT       &kp FSLH
+                                        &lt 2 TAB  &lt 3 SPACE    &lt 2 ENTER      &kp BSPC
             >;
         };
 
@@ -72,10 +77,10 @@
 
         num_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9     &kp MINUS
-&trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6      &kp PLUS
-&trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp ASTERISK
-                        &trans  &trans    &trans  &kp N0
+&kp GRAVE  &trans  &kp INSERT  &trans            &trans     &kp LEFT_BRACE  &kp N7  &kp N8  &kp N9     &kp MINUS
+   &trans  &trans      &trans  &trans  &kp SINGLE_QUOTE    &kp RIGHT_BRACE  &kp N4  &kp N5  &kp N6      &kp PLUS
+   &trans  &trans      &trans  &trans            &trans        &kp INT_YEN  &kp N1  &kp N2  &kp N3  &kp ASTERISK
+                               &trans            &trans             &trans  &kp N0
             >;
         };
 
@@ -88,6 +93,15 @@
             >;
 
             label = "NAV";
+        };
+
+        media_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&trans  &trans  &trans  &trans  &trans    &kp C_STOP   &kp C_PLAY_PAUSE   &kp C_PREVIOUS            &kp C_NEXT                &trans
+&trans  &trans  &trans  &trans  &trans        &trans             &trans           &trans                &trans                &trans
+                        &trans  &trans        &trans             &trans
+            >;
         };
 
         blank_layer {
