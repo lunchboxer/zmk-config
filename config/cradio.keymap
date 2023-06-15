@@ -52,6 +52,11 @@
             bindings = <&sl 4>;
             key-positions = <28 26>;
         };
+
+        power {
+            bindings = <&kp C_POWER>;
+            key-positions = <28 27 26>;
+        };
     };
 
     keymap {
