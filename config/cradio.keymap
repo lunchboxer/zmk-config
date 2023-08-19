@@ -57,6 +57,12 @@
             bindings = <&kp C_POWER>;
             key-positions = <28 27 26>;
         };
+
+        Enter_left {
+            bindings = <&kp ENTER>;
+            key-positions = <11 30>;
+            layers = <>;
+        };
     };
 
     keymap {
