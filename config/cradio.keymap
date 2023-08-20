@@ -60,7 +60,7 @@
 
         Enter_left {
             bindings = <&kp ENTER>;
-            key-positions = <30 21>;
+            key-positions = <1 3>;
         };
     };
 
